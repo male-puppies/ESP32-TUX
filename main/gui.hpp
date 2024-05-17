@@ -209,8 +209,8 @@ void lv_setup_styles()
     // CF_INDEXED_8_BIT for smaller size - resolution 480x480
     // NOTE: Dynamic loading bg from SPIFF makes screen perf bad
     if (lv_fs_is_ready('F')) { // NO SD CARD load default
-        ESP_LOGW(TAG,"Loading - F:/bg/dev_bg9.bin");
-        lv_style_set_bg_img_src(&style_content_bg, "F:/bg/dev_bg9.bin");    
+        ESP_LOGW(TAG,"Loading - F:/bg/dev_bg.bin");
+        lv_style_set_bg_img_src(&style_content_bg, "F:/bg/dev_bg.bin");    
     } else {
         ESP_LOGW(TAG,"Loading - from firmware");
         lv_style_set_bg_img_src(&style_content_bg, &dev_bg);
